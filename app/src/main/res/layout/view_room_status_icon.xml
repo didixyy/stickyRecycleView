@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/y96"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/x4"
+    app:cardElevation="0dp"
+ >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_room_status"
+            android:background="@color/assist_color_red_ee776f"
+
+            android:layout_width="@dimen/x56"
+            android:layout_height="@dimen/y56" />
+        <com.unovo.views.stickytitlerecyclerview.RoomStatusDayTextView
+            android:id="@+id/tv_room_status_day"
+            android:layout_below="@id/iv_room_status"
+            android:text="99"
+            android:textColor="@color/assist_color_red_ee776f"
+            android:gravity="center"
+            android:background="@color/assist_color_orange_ee776f"
+            android:textSize="@dimen/font30px"
+            android:layout_width="@dimen/x56"
+            android:layout_height="@dimen/y42" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

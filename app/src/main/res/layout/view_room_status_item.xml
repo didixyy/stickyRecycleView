@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y320"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.CardView
+        tools:targetApi="lollipop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/view_room_status_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                layout="@layout/view_room_status_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/x15" />
+            <com.unovo.views.stickytitlerecyclerview.FatherSunRoomLine
+                android:id="@+id/line_room_status"
+                app:line_style="dash"
+                app:line_Color="@color/assist_color_red_ee776f"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y10" />
+            <TextView
+                android:layout_marginTop="@dimen/y30"
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_build_name"
+                tools:text="单元名称"
+                android:textColor="@color/font_color_424242_1"
+                android:textSize="@dimen/font30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/tv_build_name"
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_room_name"
+                android:layout_marginTop="@dimen/y18"
+                tools:text="房间名称"
+                android:textColor="@color/font_color_424242_1"
+                android:textSize="@dimen/font30px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_below="@+id/tv_room_name"
+                android:layout_marginLeft="@dimen/x15"
+                android:id="@+id/tv_check_in_time"
+                tools:text="2018-09-11"
+                android:textSize="@dimen/font30px"
+                android:textColor="@color/font_color_808080_2"
+                android:layout_marginTop="@dimen/x34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/y19"
+                android:id="@+id/line"
+                android:layout_below="@id/tv_check_in_time"
+                android:layout_width="match_parent"
+                android:background="@color/line_color"
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_marginRight="@dimen/x8"
+                android:layout_height="@dimen/y3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15"
+                android:paddingTop="@dimen/y16"
+                android:paddingBottom="@dimen/y18"
+                android:paddingStart="@dimen/x15"
+                android:layout_below="@+id/line">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font30px"
+                    android:textColor="@color/font_color_808080_2"
+                    tools:text="￥1000" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:textSize="@dimen/font30px"
+                    android:textColor="@color/font_color_808080_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    tools:text="张三" />
+            </RelativeLayout>
+            <ImageView
+                android:paddingTop="@dimen/outside"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/x36"
+                android:src="@mipmap/ic_room_enable"
+                android:id="@+id/iv_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
